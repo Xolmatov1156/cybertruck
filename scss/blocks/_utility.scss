@@ -1,0 +1,40 @@
+.utility-item:last-child {
+        margin-top: 80px;
+        
+}
+
+.utility-title {
+    color: white;
+    font-size: 28px;
+}
+
+.utility-list {
+    width: 972px;
+}
+
+.utility-text{
+    font-size: 20px;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.utility-mobile-img {
+    display: none;
+}
+
+@media only screen and (max-width:958px){
+    .utility-item {
+        flex-direction: column;
+    }
+    .utility-list {
+        width: 100%;
+    }
+    .utility-mobile-img {
+        display: block;
+        object-fit: cover;
+    }
+    .utility-img {
+        display: none;
+    }
+}

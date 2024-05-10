@@ -1,0 +1,75 @@
+
+.site-header {
+    position: relative;
+    padding-top: 50px;
+    background-image: url("../../images/header_back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 100vh;
+    text-align: center;
+    font-weight: 500;
+}
+
+.header-logo__wrapper {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.header-text {
+    width: 100%;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
+.header-link {
+    width: 225px;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+    margin: 0px auto;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 14px 0px;
+    border: 4px solid white;
+    font-family: "Manrope";
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:854px){
+    .site-header {
+        background-image: url(../../images/header_mobile_back.png);
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .site-header {
+        padding: 60px 20px;
+    }
+    .site-logo {
+        width: 200px;
+        height: 56px;
+
+    }
+    .header-logo__wrapper {
+        margin-bottom: 32px;
+    }
+    .header-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .header-link {
+        width: 95%;
+        font-size: 20px;
+    }
+}
